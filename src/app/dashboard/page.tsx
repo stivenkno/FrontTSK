@@ -14,6 +14,8 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 
+import Image from "next/image";
+
 export default function Page() {
   return (
     <SidebarProvider>
@@ -42,8 +44,10 @@ export default function Page() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min text-9xl flex justify-center items-center">
-            TE AMO LUISA
+          <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min text-3xl flex flex-col justify-center items-center">
+            TE AMO LUISA :3
+            <Image src="/perri.png" alt="shadcn" width={500} height={500} />
+            GRRRRRRR
           </div>
         </div>
       </SidebarInset>
