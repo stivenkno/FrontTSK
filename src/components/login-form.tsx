@@ -31,6 +31,7 @@ export function LoginForm({
         }
       );
       localStorage.setItem("token", response.data.token);
+      window.location.href = "/dashboard";
     } catch (error) {
       console.error(error);
     }
@@ -95,7 +96,7 @@ export function LoginForm({
               </div>
             </div>
           </form>
-          <div className="bg-muted relative hidden md:block">
+          <div className="bg-muted text- relative hidden md:block">
             <Image
               width={200}
               height={200}
